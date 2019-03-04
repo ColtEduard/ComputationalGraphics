@@ -15,6 +15,7 @@
 // 10 = 4 + 6;
 // and so on
 
+// Pascal triangle pseudoCode
 main()
 {
     print("Size of pascal triangle: ");
