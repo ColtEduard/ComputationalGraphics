@@ -1,0 +1,9 @@
+// The Sierpinski Triangle built with random points is also called "The Sierpinski Game"
+// The Sierpinski Game starts with 3 points, points of an isoscel triangle
+// Each point is considered a corner
+
+// At each step you chose a random point inside the triangle(not necessarily one of the corners)
+// Then you plot a point between the random one and an existing corner
+//  (if the random point coincides with the corner, between the point and another existing corner)
+
+// At each step you will get closer to having a complete Sierpinski Triangle built with points
