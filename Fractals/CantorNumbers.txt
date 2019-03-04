@@ -1,6 +1,7 @@
 // Read a number and check if it belongs to the Cantor set
 // A cantor number is a number that in base 3, it's only built out of 0 and 2
 
+// Cantor numbers pseudoCode
 main()
 {
 base;
