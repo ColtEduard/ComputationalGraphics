@@ -1,0 +1,109 @@
+// Read a number and check if it belongs to the Cantor set
+// A cantor number is a number that in base 3, it's only built out of 0 and 2
+
+main()
+{
+base;
+// We use this variable for the number in base 3
+// - Array
+number[]; 
+length;
+
+// We use this variable for the number in base 10
+// - Number
+num;
+
+print("Base 10 or 3: ");
+base = input();
+
+    while(base != 10 | base != 3)
+    {
+        // if base 10 - check number in base 10
+        if(base == 10)
+        {
+            print("Enter number: ");    
+            num = input();
+            
+            // The parameter this method takes is a number
+            if(isCantorNumberBase10(num)
+            {
+                print("Number belongs to the Cantor set");
+            } else
+                {
+                print("Number does not belong to the Cantor set");
+            }
+        // if base 3 - check number in base 3
+        }else if(base == 3)
+            {
+            print("Length of the number: ");
+            length = input();
+            number = int[length];
+            
+            print("Enter number: ");
+            
+            for(i = 0; i < length; i++)
+            {
+                num[i] = input();
+            }
+            
+            // The parameter this method takes is an array
+            if(isCantorNumberBase3(number[]))
+            {
+                print("Number belongs to the Cantor set");
+            } else
+                {
+                print("Number does not belong to the Cantor set");
+            }
+            
+        // if not base 10 or 3, try again
+        } else 
+            {
+            print("Base 10 or 3: ");
+            base = input();
+        }  
+    }
+}
+
+// Method to check if a number in base 10 belongs to the Cantor set
+isCantorNumberBase10(num)
+{
+  remainder;
+  // Numbers in the Cantor set, in base 3 only have 0 or 2
+  
+  // Divide the number until it reaches 0 (dividing by 0 makes no sense)
+  while(num > 0)
+  {
+    // Divide the number and check the remainder
+    remainder = num % 3;
+    num /= 3;
+    
+    // if remainder is 1, it doesn't belong to the Cantor set
+    if(remainder == 1)
+    {
+        return false;
+    }
+  }
+  
+  // if the remainder was never 1, it belongs to the Cantor set
+  return true;
+}
+
+// Method to check if a number in base 3 belongs to the Cantor set
+isCantorNumberBase3(num[])
+{
+    for(i = 0; i < num.length;)
+    {
+        if(num[i] == 1)
+        {
+            return false;
+        } else if(num[i] == 0 || num[i] == 2)
+            {
+            i++;
+        }else
+            {
+            print("This number is not in base 3");
+            return false;
+        }
+    } 
+    return true;
+}
