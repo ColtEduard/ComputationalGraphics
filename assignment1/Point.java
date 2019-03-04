@@ -36,7 +36,8 @@ public class Point {
 	}
 	
 	public void input()
-	{
+	{	
+		
 		System.out.println("Enter the coordinates (X, Y) ");
 		this.x = scanner.nextDouble();
 		this.y = scanner.nextDouble();
